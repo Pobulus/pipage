@@ -8,29 +8,35 @@ import random, math, time, sys
 #attempt to set screen size automatically
 #also tkinter in python3, but Tkinter in python2. Why? 
 if sys.version_info[0] < 3:
-	try:
-		import screeninfo
-		screen = screeninfo.get_monitors()[0]
-		cw = screen.width
-	except ImportError:
-
-		print("It seems you haven't installed <screeninfo> a python package required to get your monitor's width")
-		print("You can install it with 'pip install screeninfo'")
-		print("The program will use the default width, which you may change in the pillows.py file.")
-		cw = default_width
 	from Tkinter import *
-else:
-	try:
-		import screeninfo
-		screen = screeninfo.get_monitors()[0]
-		cw = screen.width
-	except ImportError:
-		print("It seems you haven't installed <screeninfo> a python package required to get your monitor's width")
-		print("You can install it with 'pip3 install screeninfo'")
-		print("The program will use the default width, which you may change in the pillows.py file.")
-		cw = default_width
-	from tkinter import *
+	if default_width == 480:
+		try:
+			import screeninfo
+			screen = screeninfo.get_monitors()[0]
+			cw = screen.width
+		except ImportError:
 
+			print("It seems you haven't installed <screeninfo> a python package required to get your monitor's width")
+			print("You can install it with 'pip install screeninfo'")
+			print("The program will use the default width, which you may change in the pillows.py file.")
+			cw = default_width
+	else:
+		cw = default_width
+else:
+	from tkinter import *
+	if default_width == 480:
+		try:
+			import screeninfo
+			screen = screeninfo.get_monitors()[0]
+			cw = screen.width
+		except ImportError:
+			print("It seems you haven't installed <screeninfo> a python package required to get your monitor's width")
+			print("You can install it with 'pip3 install screeninfo'")
+			print("The program will use the default width, which you may change in the pillows.py file.")
+			cw = default_width
+	else:
+		cw = default_width
+	
 #VARIABLES, but they don't actually change that much
 
 sqh = (cw/5-4)/math.sqrt(2) #height of a square
