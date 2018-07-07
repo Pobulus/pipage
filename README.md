@@ -60,13 +60,13 @@ If you're ok with current window size, proceed to "Control", if you want to chan
  On the program's site it look like this:</br>
 Two numbers, one in binary and one in ternary, the first one consists of 4 bits. </br>
 Blue on the inside</br>
-| Pillow 2 tilted</br>
-|</br>
+| </br>
+|  Pillow 2 tilted</br>
 v  v</br>
 1010</br>
  ^  ^ </br>
+ |  Pillow 1 tilted</br>
  | </br>
- | Pillow 1 tilted</br>
  Pillow 3 tilted</br>
  
  so for example, value of 1101, would look like this:<br/> 
