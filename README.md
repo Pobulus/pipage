@@ -48,7 +48,7 @@ If you're ok with current window size, proceed to "Control", if you want to chan
  1■ 2■ 3■ 4■ 5■
  <ul>
  <li>I have 2 blue pillows and 3 red pillows</li>
-  <li>They myst be arranged symetrically, so the one in the middle must be red</li>
+  <li>They must be arranged symetrically, so the one in the middle must be red</li>
   <li>Since they're simetrical, pillow 1 and 5 are in the same state, just like 2 and 4, so i can treat it like 3 pillows</li>
   <li>Each pillow can be either straight or tilted by 45 degrees</li>
   <li>Blue can be a state of only pillow 1 or only pillow 2</li>
@@ -58,12 +58,14 @@ If you're ok with current window size, proceed to "Control", if you want to chan
  </br>
  So with this list of assumptions i made this program. </br>
  On the program's site it look like this:</br>
-Two numbers, one int binary and one in ternary, the first one consists of 4 bits. </br>
+Two numbers, one in binary and one in ternary, the first one consists of 4 bits. </br>
 Blue on the inside</br>
 | Pillow 2 tilted</br>
-v v</br>
+|</br>
+v  v</br>
 1010</br>
- ^ ^ </br>
+ ^  ^ </br>
+ | </br>
  | Pillow 1 tilted</br>
  Pillow 3 tilted</br>
  
@@ -73,11 +75,12 @@ v v</br>
  No to the second number, two digits in base 3</br>
  these correspond to pillows 2 and 1,</br>
  if the value is 1 they are next to the pillow on the right</br>
- if the value is 2 thay are over the pillow on the right</br>
- and if the value is 0mthay are below the pillow on the left</br>
+ if the value is 2 they are over the pillow on the right</br>
+ and if the value is 0 they are below the pillow on the left</br>
  And this gives us 9 possible combinations</br>
  when we multiply both of those numbers we get 144 possible combinations of colors, tilts and overlaps.</br>
  </br>
- <b>IMPROVEMENTS</b>
+ <b>IMPROVEMENTS</b></br>
  Can this program even be improved? Yes, certainly! We can add asimetrical patterns with two blues on one side or with a blue in the middle</br>
- also maybe more than one row, but this requires all the pillows to be tilted. but for any of these see me in 5 months, that's when I'll run out of these patterns :).
+ also maybe more than one row, but this requires all the pillows to be tilted.
+ </br> For any of these see me in 5 months, that's when I'll run out of these patterns :).
