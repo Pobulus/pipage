@@ -48,7 +48,7 @@ If you're ok with current window size, proceed to "Control", if you want to chan
  1■ 2■ 3■ 4■ 5■
  <ul>
  <li>I have 2 blue pillows and 3 red pillows</li>
-  <li>They must be arranged symetrically, so the one in the middle must be red</li>
+  <li>They must be arranged symetrically, so the one in the middle must be red (in the program it is orange to see if it is over or below other pillows)</li>
   <li>Since they're simetrical, pillow 1 and 5 are in the same state, just like 2 and 4, so i can treat it like 3 pillows</li>
   <li>Each pillow can be either straight or tilted by 45 degrees</li>
   <li>Blue can be a state of only pillow 1 or only pillow 2</li>
