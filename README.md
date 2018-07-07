@@ -1,5 +1,5 @@
 # pipage
-<b><h1>The Pillow Pattern Generator</h1></b> </br>
+<b><h2>The Pillow Pattern Generator</h2></b> </br>
 Okay so what is this program for? Does it generate patterns for pillows? </br>
 No. </br>
 Then what's its purpose?</br>
